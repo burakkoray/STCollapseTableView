@@ -271,13 +271,8 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-<<<<<<< HEAD
-	int nbSection = [self.collapseDataSource numberOfSectionsInTableView:tableView];
-
-=======
 	NSInteger nbSection = [self.collapseDataSource numberOfSectionsInTableView:tableView];
     
->>>>>>> fix-conversion-warning
 	while (nbSection < [self.sectionsStates count])
     {
 		[self.sectionsStates removeLastObject];
