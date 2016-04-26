@@ -217,6 +217,9 @@
     {
 		[self openSection:sectionIndex animated:animated];
 	}
+
+    if (_sectionDelegate && [_sectionDelegate respondsToSelector:@selector(collapseTableView:isOpened:atSection:)])
+        [_sectionDelegate collapseTableView:self isOpened:!sectionIsOpen atSection:sectionIndex];
 }
 
 - (BOOL)isOpenSection:(NSUInteger)sectionIndex

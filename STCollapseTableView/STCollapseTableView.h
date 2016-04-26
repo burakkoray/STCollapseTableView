@@ -29,6 +29,11 @@
  ***********************************************************************************/
 
 #import <UIKit/UIKit.h>
+/**
+ *	STCollapseTableViewSectionDelegate is a delegate to notify section situation.
+ */
+
+@protocol STCollapseTableViewSectionDelegate;
 
 /**
  *	STCollapseTableView is a UITableView subclass that automatically collapse and/or expand your sections.
@@ -37,6 +42,11 @@
  *  By default all the sections are closed.
  */
 @interface STCollapseTableView : UITableView
+
+/**
+ *	This property allow to set delegate for STCollapseTableView.
+ */
+@property (weak, nonatomic) id <STCollapseTableViewSectionDelegate> sectionDelegate;
 
 /**
  *	This property allow to enable/disable the exclusivity.
@@ -60,8 +70,8 @@
  *	@param	animated	YES if you want the opening to be animated.
  */
 - (void)openSection:(NSUInteger)sectionIndex animated:(BOOL)animated;
-
 /**
+
  *	This method will close the section whose index is in parameters.
  *
  *	@param	sectionIndex	The section you want to close.
@@ -87,3 +97,20 @@
 - (BOOL)isOpenSection:(NSUInteger)sectionIndex;
 
 @end
+
+@protocol STCollapseTableViewSectionDelegate<NSObject>
+
+@optional
+/**
+ *	This methods will notify section is opened or closed after toggle action.
+ *
+ *	@param	tableView   The STCollapseTableView itself.
+ *	@param	opened 	    Is opened or not.
+ *	@param	section     The section you want to know in action.
+ *
+ */
+- (void)collapseTableView:(STCollapseTableView *)tableView isOpened:(BOOL) opened atSection:(NSInteger)section;
+
+@end
+
+
