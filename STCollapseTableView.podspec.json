@@ -1,6 +1,6 @@
 {
   "name": "STCollapseTableView",
-  "version": "0.1.2a",
+  "version": "0.1.3a",
   "summary": "A UITableView subclass that automatically collapse and/or expand your sections.",
   "description": "A UITableView subclass that automatically collapse and/or expand your sections.\n                    You just have to fill your datasource like for a classic UITableView and the magic will happen.\n",
   "homepage": "https://github.com/iSofTom/STCollapseTableView",
