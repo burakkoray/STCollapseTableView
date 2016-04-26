@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/allenhuang/STCollapseTableView.git",
-    "tag": "0.1.2a"
+    "tag": "0.1.3a"
   },
   "platforms": {
     "ios": "5.0"
