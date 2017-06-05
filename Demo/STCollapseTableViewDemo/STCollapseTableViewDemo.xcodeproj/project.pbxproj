@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F8E3241EE58BF3004BB634 /* UpAccessor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F8E3221EE58BF3004BB634 /* UpAccessor@2x.png */; };
+		64F8E3251EE58BF3004BB634 /* UpAccessor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F8E3231EE58BF3004BB634 /* UpAccessor@3x.png */; };
+		64F8E3281EE58BFD004BB634 /* DownAccessor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F8E3261EE58BFD004BB634 /* DownAccessor@2x.png */; };
+		64F8E3291EE58BFD004BB634 /* DownAccessor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F8E3271EE58BFD004BB634 /* DownAccessor@3x.png */; };
 		9A519E7C17B5006A00B5C3AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A519E7B17B5006A00B5C3AD /* UIKit.framework */; };
 		9A519E7E17B5006A00B5C3AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A519E7D17B5006A00B5C3AD /* Foundation.framework */; };
 		9A519E8017B5006A00B5C3AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A519E7F17B5006A00B5C3AD /* CoreGraphics.framework */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64F8E3221EE58BF3004BB634 /* UpAccessor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpAccessor@2x.png"; sourceTree = "<group>"; };
+		64F8E3231EE58BF3004BB634 /* UpAccessor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpAccessor@3x.png"; sourceTree = "<group>"; };
+		64F8E3261EE58BFD004BB634 /* DownAccessor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownAccessor@2x.png"; sourceTree = "<group>"; };
+		64F8E3271EE58BFD004BB634 /* DownAccessor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownAccessor@3x.png"; sourceTree = "<group>"; };
 		9A519E7817B5006A00B5C3AD /* STCollapseTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCollapseTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A519E7B17B5006A00B5C3AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A519E7D17B5006A00B5C3AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,7 +111,11 @@
 				9A519E8317B5006A00B5C3AD /* STCollapseTableViewDemo-Info.plist */,
 				9A519E8417B5006A00B5C3AD /* InfoPlist.strings */,
 				9A519E8717B5006A00B5C3AD /* main.m */,
+				64F8E3261EE58BFD004BB634 /* DownAccessor@2x.png */,
+				64F8E3271EE58BFD004BB634 /* DownAccessor@3x.png */,
 				9A519E8917B5006A00B5C3AD /* STCollapseTableViewDemo-Prefix.pch */,
+				64F8E3221EE58BF3004BB634 /* UpAccessor@2x.png */,
+				64F8E3231EE58BF3004BB634 /* UpAccessor@3x.png */,
 				9A519E8D17B5006A00B5C3AD /* Default.png */,
 				9A519E8F17B5006A00B5C3AD /* Default@2x.png */,
 				9A519E9117B5006A00B5C3AD /* Default-568h@2x.png */,
@@ -172,9 +184,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F8E3251EE58BF3004BB634 /* UpAccessor@3x.png in Resources */,
+				64F8E3241EE58BF3004BB634 /* UpAccessor@2x.png in Resources */,
 				9A519E8617B5006A00B5C3AD /* InfoPlist.strings in Resources */,
+				64F8E3281EE58BFD004BB634 /* DownAccessor@2x.png in Resources */,
 				9A519E8E17B5006A00B5C3AD /* Default.png in Resources */,
 				9A519E9017B5006A00B5C3AD /* Default@2x.png in Resources */,
+				64F8E3291EE58BFD004BB634 /* DownAccessor@3x.png in Resources */,
 				9A519E9217B5006A00B5C3AD /* Default-568h@2x.png in Resources */,
 				9A519E9817B5006A00B5C3AD /* ViewController.xib in Resources */,
 			);
