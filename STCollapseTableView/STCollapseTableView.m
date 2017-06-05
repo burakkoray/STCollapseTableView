@@ -293,8 +293,24 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView* view = [self.collapseDelegate tableView:tableView viewForHeaderInSection:section];
-
+    UIView *view;
+    
+    if (view == nil) {
+        view = [self.collapseDelegate tableView:tableView viewForHeaderInSection:section];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(tableView.frame.size.width - 18, 15, 10, 10)];
+        imageView.tag = 300;
+        [view addSubview:imageView];
+    }
+    
+    UIImageView *currentImageView = (UIImageView *)[ view viewWithTag:300];
+    
+    if ([self isOpenSection:section]) {
+        [currentImageView setImage:[UIImage imageNamed:@"UpAccessor"]];
+    }else{
+        [currentImageView setImage:[UIImage imageNamed:@"DownAccessor"]];
+    }
+    
+    
     if (self.shouldHandleHeadersTap)
     {
         NSArray* gestures = view.gestureRecognizers;
@@ -326,6 +342,7 @@
     if (index >= 0)
     {
         [self toggleSection:(NSUInteger)index animated:YES];
+        [self reloadSections:[NSIndexSet indexSetWithIndex:index] withRowAnimation: UITableViewRowAnimationAutomatic];
     }
 }
 
